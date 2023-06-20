@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Moli&#39;s Blog</title>
-    <link>http://molichaj.github.io/</link>
+    <link>http://alane33.github.io/</link>
     <description>Recent content on Moli&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Jun 2023 11:45:28 +0000</lastBuildDate><atom:link href="http://molichaj.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Jun 2023 11:45:28 +0000</lastBuildDate><atom:link href="http://alane33.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>字体调整</title>
-      <link>http://molichaj.github.io/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</link>
+      <link>http://alane33.github.io/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</link>
       <pubDate>Fri, 09 Jun 2023 11:45:28 +0000</pubDate>
       
-      <guid>http://molichaj.github.io/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</guid>
+      <guid>http://alane33.github.io/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</guid>
       <description>问题描述 使用Frame主题时，正文内容字体较大，如何调整字号
 探索过程 首先打开主题文件，判断字体文件应该在css或fonts文件夹下
 打开fonts文件夹发现只有字体文件
@@ -23,29 +23,29 @@
     
     <item>
       <title>英语口语提升</title>
-      <link>http://molichaj.github.io/posts/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</link>
+      <link>http://alane33.github.io/posts/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</link>
       <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
       
-      <guid>http://molichaj.github.io/posts/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</guid>
+      <guid>http://alane33.github.io/posts/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</guid>
       <description>会陆续在这篇里面更新关于提升英语口语的方法。</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://molichaj.github.io/about/</link>
+      <link>http://alane33.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://molichaj.github.io/about/</guid>
+      <guid>http://alane33.github.io/about/</guid>
       <description>我是jin 很高兴建立hugo个人博客
 的颂歌 是德国 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://molichaj.github.io/tags/</link>
+      <link>http://alane33.github.io/tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://molichaj.github.io/tags/</guid>
+      <guid>http://alane33.github.io/tags/</guid>
       <description></description>
     </item>
     

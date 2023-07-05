@@ -10,7 +10,7 @@
       <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-cn</language>
     <lastBuildDate>Fri, 09 Jun 2023 11:45:28 +0000</lastBuildDate><atom:link href="/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>字体调整</title>
@@ -24,6 +24,27 @@
 推断应该在css文件夹，打开查看
 发现有 font.styl 文件，查看有 font-size $font-size-body 代码，推测应当修改body字体
 查看文件夹内其他文件找到 variable.styl 中有font size设置，找到 font-size-body 处修改，原始设定为16px，修改成14px符合要求</description>
+      <content:encoded><![CDATA[<h2 id="问题描述">问题描述</h2>
+<p>使用Frame主题时，正文内容字体较大，如何调整字号</p>
+<h2 id="探索过程">探索过程</h2>
+<ol>
+<li>
+<p>首先打开主题文件，判断字体文件应该在css或fonts文件夹下</p>
+</li>
+<li>
+<p>打开fonts文件夹发现只有字体文件</p>
+</li>
+<li>
+<p>推断应该在css文件夹，打开查看</p>
+</li>
+<li>
+<p>发现有<code> font.styl</code> 文件，查看有 <code>font-size $font-size-body</code> 代码，推测应当修改body字体</p>
+</li>
+<li>
+<p>查看文件夹内其他文件找到 <code>variable.styl</code> 中有font size设置，找到 <code>font-size-body</code> 处修改，原始设定为16px，修改成14px符合要求</p>
+</li>
+</ol>
+]]></content:encoded>
     </item>
     
   </channel>

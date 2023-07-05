@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>hugo on Moli&#39;s Blog</title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in hugo on Moli&#39;s Blog</description>
+    <image>
+      <title>Moli&#39;s Blog</title>
+      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 05 Jul 2023 14:26:08 +0800</lastBuildDate><atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo &#43; Github Pages踩坑记录</title>
+      <link>/posts/hugo-&#43;-github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Wed, 05 Jul 2023 14:26:08 +0800</pubDate>
+      
+      <guid>/posts/hugo-&#43;-github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>之前使用过 hexo + github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要参考了Alola World | 暨简明麻瓜快速念咒 Hugo 搭建笔记 | 小球飞鱼 (mantyke.icu) 这篇博文，博主写的详细易懂，我就不写具体流程了，直接点开链接看就好啦，但是可以补充一些作为参考。
+建立 github 仓库的时候建议勾选添加readme.md文件，因为我不知道怎么quick setup
+部署到 github pages 之前，打开 git 执行前两行命令查看一下全局用户名和邮箱，我返回的是之前账号的信息，需要修改成新账号的用户名和邮箱，执行后两行即可。
+1 2 3 4 5 6 # 查看当前设置用户名、邮箱名 git config --global user.name git config --global user.email # 设置新信息 git config --global user.name “用户名” git config --global user.email “邮箱账号” 新版的 github 中默认的分支为main，最后一步推送的时候使用git push -u origin master即可。
+git push时报错[rejected] main -&amp;gt; main(fetchh first)，搜索多种解决方案无果，最后使用暴力命令git push -f 解决。</description>
+      <content:encoded><![CDATA[<p>之前使用过 hexo + github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要参考了<a href="https://mantyke.icu/posts/2021/f185ce41/">Alola World | 暨简明麻瓜快速念咒 Hugo 搭建笔记 | 小球飞鱼 (mantyke.icu)</a> 这篇博文，博主写的详细易懂，我就不写具体流程了，直接点开链接看就好啦，但是可以补充一些作为参考。</p>
+<ol>
+<li>
+<p>建立 github 仓库的时候建议勾选添加<code>readme.md</code>文件，因为我不知道怎么<code>quick setup</code></p>
+</li>
+<li>
+<p>部署到 github pages 之前，打开 git 执行前两行命令查看一下全局用户名和邮箱，我返回的是之前账号的信息，需要修改成新账号的用户名和邮箱，执行后两行即可。</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># 查看当前设置用户名、邮箱名
+</span></span><span style="display:flex;"><span>git config --global user.name
+</span></span><span style="display:flex;"><span>git config --global user.email
+</span></span><span style="display:flex;"><span># 设置新信息
+</span></span><span style="display:flex;"><span>git config --global user.name “用户名”
+</span></span><span style="display:flex;"><span>git config --global user.email “邮箱账号”
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>新版的 github 中默认的分支为<code>main</code>，最后一步推送的时候使用<code>git push -u origin master</code>即可。</p>
+</li>
+<li>
+<p><code> git push</code>时报错<code>[rejected] main -&gt; main(fetchh first)</code>，搜索多种解决方案无果，最后使用暴力命令<code>git push -f</code> 解决。</p>
+</li>
+</ol>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

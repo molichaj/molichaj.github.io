@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Tags | Moli&#39;s Blog</title>
+<title>hugo | Moli&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="canonical" href="/tags/">
+<link rel="canonical" href="/tags/hugo/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.3613efbd0b1772781e8f49935e973cae632a7f61471c05b17be155505ccf87b5.css" integrity="sha256-NhPvvQsXcngej0mTXpc8rmMqf2FHHAWxe&#43;FVUFzPh7U=" rel="preload stylesheet" as="style">
 <link rel="icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="%3Clink%20/%20abs%20url%3E">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="%3Clink%20/%20abs%20url%3E">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="/tags/index.xml">
+<link rel="alternate" type="application/rss+xml" href="/tags/hugo/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -55,15 +55,15 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="Tags" />
+</noscript><meta property="og:title" content="hugo" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/tags/" /><meta property="og:image" content="%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
+<meta property="og:url" content="/tags/hugo/" /><meta property="og:image" content="%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
-<meta name="twitter:title" content="Tags"/>
+<meta name="twitter:title" content="hugo"/>
 <meta name="twitter:description" content=""/>
 
 </head>
@@ -115,7 +115,7 @@
             </li>
             <li>
                 <a href="/tags/" title="🔖Tags">
-                    <span class="active">🔖Tags</span>
+                    <span>🔖Tags</span>
                 </a>
             </li>
             <li>
@@ -136,25 +136,28 @@
         </ul>
     </nav>
 </header>
-<main class="main">
-<header class="page-header">
-    <h1>Tags</h1>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="">Home</a>&nbsp;»&nbsp;<a href="/tags/">Tags</a></div>
+  <h1>
+    hugo
+  </h1>
 </header>
 
-<ul class="terms-tags">
-    <li>
-        <a href="/tags/hugo/">hugo <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/">博客美化 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="/tags/%E6%91%98%E5%BD%95/">摘录 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="/tags/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/">英语口语 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-</ul>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2>Hugo &#43; Github Pages踩坑记录
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>之前使用过 hexo &#43; github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要参考了Alola World | 暨简明麻瓜快速念咒 Hugo 搭建笔记 | 小球飞鱼 (mantyke.icu) 这篇博文，博主写的详细易懂，我就不写具体流程了，直接点开链接看就好啦，但是可以补充一些作为参考。
+建立 github 仓库的时候建议勾选添加readme.md文件，因为我不知道怎么quick setup
+部署到 github pages 之前，打开 git 执行前两行命令查看一下全局用户名和邮箱，我返回的是之前账号的信息，需要修改成新账号的用户名和邮箱，执行后两行即可。
+1 2 3 4 5 6 # 查看当前设置用户名、邮箱名 git config --global user.name git config --global user.email # 设置新信息 git config --global user.name “用户名” git config --global user.email “邮箱账号” 新版的 github 中默认的分支为main，最后一步推送的时候使用git push -u origin master即可。
+git push时报错[rejected] main -&gt; main(fetchh first)，搜索多种解决方案无果，最后使用暴力命令git push -f 解决。</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-07-05 14:26:08 +0800 CST'>2023-07-05</span></footer>
+  <a class="entry-link" aria-label="post link to Hugo &#43; Github Pages踩坑记录" href="/posts/hugo-&#43;-github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"></a>
+</article>
     </main>
     
 <footer class="footer">

@@ -8,13 +8,10 @@
 <title>Posts | Moli&#39;s Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="Posts - Moli&#39;s Blog">
-<meta name="author" content="Me">
+<meta name="author" content="">
 <link rel="canonical" href="/posts/">
-<meta name="google-site-verification" content="XYZabc">
-<meta name="yandex-verification" content="XYZabc">
-<meta name="msvalidate.01" content="XYZabc">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.3613efbd0b1772781e8f49935e973cae632a7f61471c05b17be155505ccf87b5.css" integrity="sha256-NhPvvQsXcngej0mTXpc8rmMqf2FHHAWxe&#43;FVUFzPh7U=" rel="preload stylesheet" as="style">
-<link rel="icon" href="%3Clink%20/%20abs%20url%3E">
+<link rel="icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="%3Clink%20/%20abs%20url%3E">
 <link rel="icon" type="image/png" sizes="32x32" href="%3Clink%20/%20abs%20url%3E">
 <link rel="apple-touch-icon" href="%3Clink%20/%20abs%20url%3E">
@@ -59,15 +56,15 @@
 
     </style>
 </noscript><meta property="og:title" content="Posts" />
-<meta property="og:description" content="ExampleSite description" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/posts/" /><meta property="og:image" content="%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/><meta property="og:site_name" content="ExampleSite" />
+<meta property="og:url" content="/posts/" /><meta property="og:image" content="%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"/>
 
 <meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content="ExampleSite description"/>
+<meta name="twitter:description" content=""/>
 
 
 <script type="application/ld+json">
@@ -127,28 +124,28 @@
         </div>
         <ul id="menu">
             <li>
-                <a href="/" title="🏠主页">
-                    <span>🏠主页</span>
+                <a href="/" title="🏠Home">
+                    <span>🏠Home</span>
                 </a>
             </li>
             <li>
-                <a href="/posts/" title="📚文章">
-                    <span class="active">📚文章</span>
+                <a href="/tags/" title="🔖Tags">
+                    <span>🔖Tags</span>
                 </a>
             </li>
             <li>
-                <a href="/tags/" title="🔖标签">
-                    <span>🔖标签</span>
+                <a href="/archives/" title="⏱Archives">
+                    <span>⏱Archives</span>
                 </a>
             </li>
             <li>
-                <a href="/archives/" title="⏱时间轴">
-                    <span>⏱时间轴</span>
+                <a href="/about/" title="🙋🏻‍♂️About">
+                    <span>🙋🏻‍♂️About</span>
                 </a>
             </li>
             <li>
-                <a href="/about/" title="🙋🏻‍♂️关于">
-                    <span>🙋🏻‍♂️关于</span>
+                <a href="/search/" title="🔍 (Alt &#43; /)" accesskey=/>
+                    <span>🔍</span>
                 </a>
             </li>
         </ul>
@@ -163,6 +160,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>Hugo &#43; Github Pages踩坑记录
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>之前使用过 hexo &#43; github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要参考了Alola World | 暨简明麻瓜快速念咒 Hugo 搭建笔记 | 小球飞鱼 (mantyke.icu) 这篇博文，博主写的详细易懂，我就不写具体流程了，直接点开链接看就好啦，但是可以补充一些作为参考。
+建立 github 仓库的时候建议勾选添加readme.md文件，因为我不知道怎么quick setup
+部署到 github pages 之前，打开 git 执行前两行命令查看一下全局用户名和邮箱，我返回的是之前账号的信息，需要修改成新账号的用户名和邮箱，执行后两行即可。
+1 2 3 4 5 6 # 查看当前设置用户名、邮箱名 git config --global user.name git config --global user.email # 设置新信息 git config --global user.name “用户名” git config --global user.email “邮箱账号” 新版的 github 中默认的分支为main，最后一步推送的时候使用git push -u origin master即可。
+git push时报错[rejected] main -&gt; main(fetchh first)，搜索多种解决方案无果，最后使用暴力命令git push -f 解决。</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-07-05 14:26:08 +0800 CST'>2023-07-05</span></footer>
+  <a class="entry-link" aria-label="post link to Hugo &#43; Github Pages踩坑记录" href="/posts/hugo-&#43;-github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>字体调整
     </h2>
   </header>
@@ -174,7 +187,7 @@
 发现有 font.styl 文件，查看有 font-size $font-size-body 代码，推测应当修改body字体
 查看文件夹内其他文件找到 variable.styl 中有font size设置，找到 font-size-body 处修改，原始设定为16px，修改成14px符合要求</p>
   </div>
-  <footer class="entry-footer"><span title='2023-06-09 11:45:28 +0000 UTC'>June 9, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me</footer>
+  <footer class="entry-footer"><span title='2023-06-09 11:45:28 +0000 UTC'>2023-06-09</span></footer>
   <a class="entry-link" aria-label="post link to 字体调整" href="/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/"></a>
 </article>
 
@@ -204,7 +217,7 @@
 把日常生活中会用到的一切单词换成英语来记忆。
 速成版 找个外国友人聊。（谈恋爱的话要慎重啊。且不说文化差异，想像一下那个画面“你根本就不喜欢我，你跟我在一起就是为了学英语！”。本着不影响国际关系的原则，慎重。） 去英语国家，融入当地生活个把个月。 把每一句要说出口的话转换成英语。 </p>
   </div>
-  <footer class="entry-footer"><span title='2023-05-04 15:41:22 +0000 UTC'>May 4, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Me</footer>
+  <footer class="entry-footer"><span title='2023-05-04 15:41:22 +0000 UTC'>2023-05-04</span></footer>
   <a class="entry-link" aria-label="post link to 英语口语提升" href="/posts/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/"></a>
 </article>
     </main>
@@ -217,11 +230,6 @@
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
 
 <script>
     let menu = document.getElementById('menu')
@@ -250,19 +258,6 @@
             }
         });
     });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
 
 </script>
 <script>

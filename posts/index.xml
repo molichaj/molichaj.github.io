@@ -4,6 +4,11 @@
     <title>Posts on Moli&#39;s Blog</title>
     <link>/posts/</link>
     <description>Recent content in Posts on Moli&#39;s Blog</description>
+    <image>
+      <title>Moli&#39;s Blog</title>
+      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Jun 2023 11:45:28 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />

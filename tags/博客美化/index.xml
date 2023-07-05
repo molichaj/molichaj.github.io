@@ -4,6 +4,11 @@
     <title>博客美化 on Moli&#39;s Blog</title>
     <link>/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</link>
     <description>Recent content in 博客美化 on Moli&#39;s Blog</description>
+    <image>
+      <title>Moli&#39;s Blog</title>
+      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Jun 2023 11:45:28 +0000</lastBuildDate><atom:link href="/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />

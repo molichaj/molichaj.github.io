@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>博客美化 on Moli&#39;s Blog</title>
+    <link>/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</link>
+    <description>Recent content in 博客美化 on Moli&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Jun 2023 11:45:28 +0000</lastBuildDate><atom:link href="/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>字体调整</title>
+      <link>/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</link>
+      <pubDate>Fri, 09 Jun 2023 11:45:28 +0000</pubDate>
+      
+      <guid>/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</guid>
+      <description>问题描述 使用Frame主题时，正文内容字体较大，如何调整字号
+探索过程 首先打开主题文件，判断字体文件应该在css或fonts文件夹下
+打开fonts文件夹发现只有字体文件
+推断应该在css文件夹，打开查看
+发现有 font.styl 文件，查看有 font-size $font-size-body 代码，推测应当修改body字体
+查看文件夹内其他文件找到 variable.styl 中有font size设置，找到 font-size-body 处修改，原始设定为16px，修改成14px符合要求</description>
+    </item>
+    
+  </channel>
+</rss>

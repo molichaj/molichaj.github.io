@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on 三三来迟</title>
-    <link>https://example.com/tags/hugo/</link>
-    <description>Recent content in hugo on 三三来迟</description>
+    <title>hugo on 茉莉茶酒</title>
+    <link>https://molichaj.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on 茉莉茶酒</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://molichaj.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo主题更换踩坑记录</title>
-      <link>https://example.com/2023/test/</link>
+      <link>https://molichaj.github.io/2023/test/</link>
       <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2023/test/</guid>
+      <guid>https://molichaj.github.io/2023/test/</guid>
       <description>写在前面 如果你打算使用hugo搭建个人博客但还没安装hugo，在选择安装包时，请尽量下载包名带extended的版本，对主题适配度更高。 一番</description>
     </item>
     
     <item>
       <title>Hugo &#43; Github Pages踩坑记录</title>
-      <link>https://example.com/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <link>https://molichaj.github.io/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
       <pubDate>Wed, 05 Jul 2023 14:26:08 +0800</pubDate>
       
-      <guid>https://example.com/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <guid>https://molichaj.github.io/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
       <description>之前使用过 hexo + github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要</description>
     </item>
     
     <item>
       <title>Hugo | Hugo-stack-theme主题魔改版</title>
-      <link>https://example.com/2022/stack-theme-mod/</link>
+      <link>https://molichaj.github.io/2022/stack-theme-mod/</link>
       <pubDate>Sun, 13 Feb 2022 03:02:52 +0800</pubDate>
       
-      <guid>https://example.com/2022/stack-theme-mod/</guid>
+      <guid>https://molichaj.github.io/2022/stack-theme-mod/</guid>
       <description>Github仓库地址：Mantyke/stack-theme-mod 本主题由CaiJimmy制作并发布，这个仓库是由Mantyke修改的魔改</description>
     </item>
     

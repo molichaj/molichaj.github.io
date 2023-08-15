@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>三三来迟</title>
-        <link>https://example.com/</link>
-        <description>Recent content on 三三来迟</description>
+        <title>茉莉茶酒</title>
+        <link>https://molichaj.github.io/</link>
+        <description>Recent content on 茉莉茶酒</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://molichaj.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>hugo主题更换踩坑记录</title>
-        <link>https://example.com/2023/test/</link>
+        <link>https://molichaj.github.io/2023/test/</link>
         <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/2023/test/</guid>
+        <guid>https://molichaj.github.io/2023/test/</guid>
         <description>&lt;h2 id=&#34;写在前面&#34;&gt;写在前面&lt;/h2&gt;
 &lt;p&gt;如果你打算使用hugo搭建个人博客但还没安装hugo，在选择安装包时，请尽量下载包名带extended的版本，对主题适配度更高。&lt;/p&gt;
 &lt;h2 id=&#34;一番折腾&#34;&gt;一番折腾&lt;/h2&gt;
@@ -43,10 +43,10 @@
         </item>
         <item>
         <title>我的浏览器插件们</title>
-        <link>https://example.com/2023/%E6%88%91%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E4%BB%AC/</link>
+        <link>https://molichaj.github.io/2023/%E6%88%91%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E4%BB%AC/</link>
         <pubDate>Mon, 17 Jul 2023 11:39:30 +0800</pubDate>
         
-        <guid>https://example.com/2023/%E6%88%91%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E4%BB%AC/</guid>
+        <guid>https://molichaj.github.io/2023/%E6%88%91%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E4%BB%AC/</guid>
         <description>&lt;p&gt;最近接受象友的安利，换了一个新的浏览器Vivaldi，我不想登陆之前的账号同步（问就是倔强），事实上这个app是基于chrome框架开发的，可以直接登录Google账号同步，所以在使用过程中，我都是需要用到才开始安装，&lt;/p&gt;
 &lt;p&gt;首先不必多说的插件：adblock，拦截广告，浏览更安全。&lt;/p&gt;
 &lt;p&gt;其次是沉浸式翻译（immense translation）直接一键翻译网页，有多种翻译引擎可供选择，有的需要提前设置key，最喜欢中英文对照的功能，可以将中文放在英文后面显示，哪不会再看对照的中文，也方便提前了解整篇文章的内容，快速判断这篇内容是否有阅读的价值。&lt;/p&gt;
@@ -54,10 +54,10 @@
         </item>
         <item>
         <title>我的APP列表</title>
-        <link>https://example.com/2023/%E6%88%91%E7%9A%84app%E5%88%97%E8%A1%A8/</link>
+        <link>https://molichaj.github.io/2023/%E6%88%91%E7%9A%84app%E5%88%97%E8%A1%A8/</link>
         <pubDate>Sat, 15 Jul 2023 17:17:21 +0800</pubDate>
         
-        <guid>https://example.com/2023/%E6%88%91%E7%9A%84app%E5%88%97%E8%A1%A8/</guid>
+        <guid>https://molichaj.github.io/2023/%E6%88%91%E7%9A%84app%E5%88%97%E8%A1%A8/</guid>
         <description>&lt;p&gt;很早之前就想总结以下我的手机端app情况，因为我就像个仓鼠，喜欢发现与尝试各种不同的app。这事说了好长时间，今天终于&lt;code&gt;hugo new posts&lt;/code&gt;了。&lt;/p&gt;
 &lt;p&gt;想总结一下目前我手机的app，首先需要知道手机里都有哪些app，我尝试寻找一种方法可以导出我的App List，通过询问C酱（这是我在象上看一位友友对ChatGPT的称呼，觉得很可爱，所以剽窃了，捂脸~）她向我推荐了AppList应用，使用这个App可以导出plaintxt、markdown、HTML等格式，于是我获得了我的App List。&lt;/p&gt;
 &lt;p&gt;我的App如果算上系统预装有259个，不算的话是211个。（此处吐槽好臃肿的系统，而且没办法卸载，恨）。&lt;/p&gt;
@@ -92,10 +92,10 @@
         </item>
         <item>
         <title>Hugo &#43; Github Pages踩坑记录</title>
-        <link>https://example.com/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+        <link>https://molichaj.github.io/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Wed, 05 Jul 2023 14:26:08 +0800</pubDate>
         
-        <guid>https://example.com/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+        <guid>https://molichaj.github.io/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
         <description>&lt;p&gt;之前使用过 hexo + github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要参考了&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/posts/2021/f185ce41/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Alola World | 暨简明麻瓜快速念咒 Hugo 搭建笔记 | 小球飞鱼 (mantyke.icu)&lt;/a&gt; 这篇博文，博主写的详细易懂，我就不写具体流程了，直接点开链接看就好啦，但是可以补充一些作为参考。&lt;/p&gt;
 &lt;ol&gt;
@@ -123,10 +123,10 @@ git config --global user.email “邮箱账号”
         </item>
         <item>
         <title>字体调整</title>
-        <link>https://example.com/2023/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</link>
+        <link>https://molichaj.github.io/2023/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</link>
         <pubDate>Fri, 09 Jun 2023 11:45:28 +0000</pubDate>
         
-        <guid>https://example.com/2023/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</guid>
+        <guid>https://molichaj.github.io/2023/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</guid>
         <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
 &lt;p&gt;使用Frame主题时，正文内容字体较大，如何调整字号&lt;/p&gt;
 &lt;h2 id=&#34;探索过程&#34;&gt;探索过程&lt;/h2&gt;
@@ -151,10 +151,10 @@ git config --global user.email “邮箱账号”
         </item>
         <item>
         <title>英语口语提升</title>
-        <link>https://example.com/2023/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</link>
+        <link>https://molichaj.github.io/2023/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</link>
         <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
         
-        <guid>https://example.com/2023/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</guid>
+        <guid>https://molichaj.github.io/2023/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</guid>
         <description>&lt;h2 id=&#34;口语最基础内容&#34;&gt;口语最基础内容&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;26个英文字母&lt;/li&gt;
@@ -223,10 +223,10 @@ git config --global user.email “邮箱账号”
         </item>
         <item>
         <title>Hugo | Hugo-stack-theme主题魔改版</title>
-        <link>https://example.com/2022/stack-theme-mod/</link>
+        <link>https://molichaj.github.io/2022/stack-theme-mod/</link>
         <pubDate>Sun, 13 Feb 2022 03:02:52 +0800</pubDate>
         
-        <guid>https://example.com/2022/stack-theme-mod/</guid>
+        <guid>https://molichaj.github.io/2022/stack-theme-mod/</guid>
         <description>&lt;p&gt;Github仓库地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/Mantyke&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Mantyke&lt;/a&gt;/&lt;a class=&#34;link&#34; href=&#34;https://github.com/Mantyke/Hugo-stack-theme-mod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;stack-theme-mod&lt;/a&gt;&lt;/p&gt;
@@ -384,11 +384,11 @@ style:
         </item>
         <item>
         <title>Chinese Test</title>
-        <link>https://example.com/2020/test-chinese/</link>
+        <link>https://molichaj.github.io/2020/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/2020/test-chinese/</guid>
-        <description>&lt;img src="https://example.com/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;短代码测试&#34;&gt;短代码测试&lt;/h2&gt;
+        <guid>https://molichaj.github.io/2020/test-chinese/</guid>
+        <description>&lt;img src="https://molichaj.github.io/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;短代码测试&#34;&gt;短代码测试&lt;/h2&gt;
 
 
 &lt;blockquote class=&#34;quote&#34;&gt;
@@ -413,11 +413,11 @@ style:
 			flex-grow: 66; 
 			flex-basis: 160px&#34;
 	&gt;
-	&lt;a href=&#34;https://example.com/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;
-		&lt;img src=&#34;https://example.com/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+	&lt;a href=&#34;https://molichaj.github.io/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;
+		&lt;img src=&#34;https://molichaj.github.io/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
 			width=&#34;667&#34;
 			height=&#34;1000&#34;
-			srcset=&#34;https://example.com/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://example.com/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w&#34;
+			srcset=&#34;https://molichaj.github.io/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://molichaj.github.io/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w&#34;
 			loading=&#34;lazy&#34;
 			alt=&#34;Photo by Florian Klauer on Unsplash&#34;&gt;
 	&lt;/a&gt;
@@ -431,11 +431,11 @@ style:
 			flex-grow: 149; 
 			flex-basis: 359px&#34;
 	&gt;
-	&lt;a href=&#34;https://example.com/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34; data-size=&#34;1000x667&#34;&gt;
-		&lt;img src=&#34;https://example.com/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+	&lt;a href=&#34;https://molichaj.github.io/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34; data-size=&#34;1000x667&#34;&gt;
+		&lt;img src=&#34;https://molichaj.github.io/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
 			width=&#34;1000&#34;
 			height=&#34;667&#34;
-			srcset=&#34;https://example.com/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://example.com/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w&#34;
+			srcset=&#34;https://molichaj.github.io/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://molichaj.github.io/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w&#34;
 			loading=&#34;lazy&#34;
 			alt=&#34;Photo by Luca Bravo on Unsplash&#34;&gt;
 	&lt;/a&gt;
@@ -450,11 +450,11 @@ style:
 			flex-grow: 133; 
 			flex-basis: 320px&#34;
 	&gt;
-	&lt;a href=&#34;https://example.com/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34; data-size=&#34;1000x750&#34;&gt;
-		&lt;img src=&#34;https://example.com/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+	&lt;a href=&#34;https://molichaj.github.io/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34; data-size=&#34;1000x750&#34;&gt;
+		&lt;img src=&#34;https://molichaj.github.io/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
 			width=&#34;1000&#34;
 			height=&#34;750&#34;
-			srcset=&#34;https://example.com/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_480x0_resize_q75_box.jpg 480w, https://example.com/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1024x0_resize_q75_box.jpg 1024w&#34;
+			srcset=&#34;https://molichaj.github.io/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_480x0_resize_q75_box.jpg 480w, https://molichaj.github.io/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1024x0_resize_q75_box.jpg 1024w&#34;
 			loading=&#34;lazy&#34;
 			alt=&#34;Photo by Helena Hertz on Unsplash&#34;&gt;
 	&lt;/a&gt;
@@ -468,11 +468,11 @@ style:
 			flex-grow: 66; 
 			flex-basis: 160px&#34;
 	&gt;
-	&lt;a href=&#34;https://example.com/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;
-		&lt;img src=&#34;https://example.com/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+	&lt;a href=&#34;https://molichaj.github.io/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;
+		&lt;img src=&#34;https://molichaj.github.io/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
 			width=&#34;667&#34;
 			height=&#34;1000&#34;
-			srcset=&#34;https://example.com/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://example.com/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w&#34;
+			srcset=&#34;https://molichaj.github.io/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://molichaj.github.io/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w&#34;
 			loading=&#34;lazy&#34;
 			alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;&gt;
 	&lt;/a&gt;

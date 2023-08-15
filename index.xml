@@ -1,204 +1,493 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Moli&#39;s Blog</title>
-    <link>/</link>
-    <description>Recent content on Moli&#39;s Blog</description>
-    <image>
-      <title>Moli&#39;s Blog</title>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Wed, 05 Jul 2023 14:26:08 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo &#43; Github Pages踩坑记录</title>
-      <link>/posts/hugo-&#43;-github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
-      <pubDate>Wed, 05 Jul 2023 14:26:08 +0800</pubDate>
-      
-      <guid>/posts/hugo-&#43;-github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
-      <description>之前使用过 hexo + github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要参考了Alola World | 暨简明麻瓜快速念咒 Hugo 搭建笔记 | 小球飞鱼 (mantyke.icu) 这篇博文，博主写的详细易懂，我就不写具体流程了，直接点开链接看就好啦，但是可以补充一些作为参考。
-建立 github 仓库的时候建议勾选添加readme.md文件，因为我不知道怎么quick setup
-部署到 github pages 之前，打开 git 执行前两行命令查看一下全局用户名和邮箱，我返回的是之前账号的信息，需要修改成新账号的用户名和邮箱，执行后两行即可。
-1 2 3 4 5 6 # 查看当前设置用户名、邮箱名 git config --global user.name git config --global user.email # 设置新信息 git config --global user.name “用户名” git config --global user.email “邮箱账号” 新版的 github 中默认的分支为main，最后一步推送的时候使用git push -u origin master即可。
-git push时报错[rejected] main -&amp;gt; main(fetchh first)，搜索多种解决方案无果，最后使用暴力命令git push -f 解决。</description>
-      <content:encoded><![CDATA[<p>之前使用过 hexo + github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要参考了<a href="https://mantyke.icu/posts/2021/f185ce41/">Alola World | 暨简明麻瓜快速念咒 Hugo 搭建笔记 | 小球飞鱼 (mantyke.icu)</a> 这篇博文，博主写的详细易懂，我就不写具体流程了，直接点开链接看就好啦，但是可以补充一些作为参考。</p>
-<ol>
-<li>
-<p>建立 github 仓库的时候建议勾选添加<code>readme.md</code>文件，因为我不知道怎么<code>quick setup</code></p>
-</li>
-<li>
-<p>部署到 github pages 之前，打开 git 执行前两行命令查看一下全局用户名和邮箱，我返回的是之前账号的信息，需要修改成新账号的用户名和邮箱，执行后两行即可。</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># 查看当前设置用户名、邮箱名
-</span></span><span style="display:flex;"><span>git config --global user.name
-</span></span><span style="display:flex;"><span>git config --global user.email
-</span></span><span style="display:flex;"><span># 设置新信息
-</span></span><span style="display:flex;"><span>git config --global user.name “用户名”
-</span></span><span style="display:flex;"><span>git config --global user.email “邮箱账号”
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>新版的 github 中默认的分支为<code>main</code>，最后一步推送的时候使用<code>git push -u origin master</code>即可。</p>
-</li>
-<li>
-<p><code> git push</code>时报错<code>[rejected] main -&gt; main(fetchh first)</code>，搜索多种解决方案无果，最后使用暴力命令<code>git push -f</code> 解决。</p>
-</li>
-</ol>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>字体调整</title>
-      <link>/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</link>
-      <pubDate>Fri, 09 Jun 2023 11:45:28 +0000</pubDate>
-      
-      <guid>/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</guid>
-      <description>问题描述 使用Frame主题时，正文内容字体较大，如何调整字号
-探索过程 首先打开主题文件，判断字体文件应该在css或fonts文件夹下
-打开fonts文件夹发现只有字体文件
-推断应该在css文件夹，打开查看
-发现有 font.styl 文件，查看有 font-size $font-size-body 代码，推测应当修改body字体
-查看文件夹内其他文件找到 variable.styl 中有font size设置，找到 font-size-body 处修改，原始设定为16px，修改成14px符合要求</description>
-      <content:encoded><![CDATA[<h2 id="问题描述">问题描述</h2>
-<p>使用Frame主题时，正文内容字体较大，如何调整字号</p>
-<h2 id="探索过程">探索过程</h2>
-<ol>
-<li>
-<p>首先打开主题文件，判断字体文件应该在css或fonts文件夹下</p>
-</li>
-<li>
-<p>打开fonts文件夹发现只有字体文件</p>
-</li>
-<li>
-<p>推断应该在css文件夹，打开查看</p>
-</li>
-<li>
-<p>发现有<code> font.styl</code> 文件，查看有 <code>font-size $font-size-body</code> 代码，推测应当修改body字体</p>
-</li>
-<li>
-<p>查看文件夹内其他文件找到 <code>variable.styl</code> 中有font size设置，找到 <code>font-size-body</code> 处修改，原始设定为16px，修改成14px符合要求</p>
-</li>
-</ol>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>英语口语提升</title>
-      <link>/posts/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</link>
-      <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
-      
-      <guid>/posts/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</guid>
-      <description>会陆续在这篇里面更新关于提升英语口语的方法。</description>
-      <content:encoded><![CDATA[<h2 id="口语最基础内容">口语最基础内容</h2>
-<ul>
-<li>26个英文字母</li>
-<li>大概的音标发音</li>
-<li>几种简单句的句型结构（陈述句，否定句，一般疑问句，特殊疑问句及其回答。）</li>
-<li>句子的构成：主谓宾</li>
-</ul>
-<p>本文主要针对的是有一定英语基础，考试也马马虎虎，但是遇到外国友人就沉默的朋友们。</p>
-<p>勇气，语言环境加练习是很重要的。</p>
-<h2 id="方法介绍">方法介绍</h2>
-<ol>
-<li>
-<p>讲。直接讲。想到什么就讲。哪怕是蹦单词也要讲。
-这一点就是勇气和自信。就像做错也比没做好。你讲错也比不敢讲要好。只有你尝试着开口讲了，你后续才有可能改正和进步。</p>
-</li>
-<li>
-<p>学英语是一件有趣的事情，不要让它变得枯燥了。把学习英语融入到生活中，融入到你的兴趣中。
-想必大家都有这种体会，想学好英语，天天捧着单词书背，但是没背两天就放弃了。过好久又拿出来背，但是没多久又放弃了。周而复始，永远只停留在abandon。因为背单词的过程很枯燥，所以很难坚持。对我这种唯兴趣论，没有监督，是真的很难坚持下来。不妨转变下思维。英语早就渗透在我们生活的方方面面了。电影，英美剧，小说，英文歌……比比皆是。挑一个你感兴趣的方向，每天做一点。比如我本人，从上大学以后，就只听英文歌，有两年时间每天什么都不做也会看几集美剧。我觉得这一点的作用就是保持你对英语的乐趣，以及把学英语这件事融入到你的日常生活里。相当于给自己创造了一种语言环境。</p>
-</li>
-<li>
-<p>说英语的时候，加点感情。
-栋栋说很多英语学习者的通病就是说英语永远在一个调上。毫无波澜。但是我们讲中文的时候，一定是有感情的。所以，他提出在你讲一句英文的时候，加点感情。一开始不适应的话，想想如果是中文，你会是什么样的语气，然后把这种语气加到英文里。我尝试以后的感受是立竿见影！我整个人都鲜活了起来哈哈哈哈。</p>
-</li>
-<li>
-<p>模仿。
-人都有好奇心嘛。我在第一次听到栋栋的口语的时候，心里就抑制不住对他的好奇。他到底悄咪咪的做了什么学了什么，口语能这么好呢！所以我就揣着好奇心厚着脸皮去问他了。他给我讲完上面三点以后，告诉了我真相。</p>
-<p>他说可以找自己喜欢的电影看，尝试模仿电影中的台词。他强调在模仿的初期，一定要讲的很慢很慢很慢很慢，仔细地斟酌每个音节的转换，把每个音节都发标准。</p>
-</li>
-</ol>
-<h2 id="个人体会">个人体会</h2>
-<p>我真正开始学英语的时候是初一。因为英语老师很爱笑，每天的衣服都不一样，讲阅读理解的时候会给我们分享她生活中相关的故事，所以我和很多同学当时都巨喜欢英语。每天放学后，我和一个同学骑车回家，我们特别喜欢用英语对话，什么都聊。尽管我们的词汇量大概也就50-100的样子，我们还是能聊完从学校到家这小二十分钟。内容包括但不限于学校家庭周末。为什么词汇量这么少的情况下，我们却能聊这么多呢？我们那会儿为了能让对话持续下去，遇到不会讲的词就用会讲的词来描述它。如果有影像记录的话，现在看肯定是错误百出的，不管是语法还是单词。</p>
-<p>但是这一段经历对我的英语口语帮助是巨大的。第一，它让我很敢讲英语。不会觉得讲英语羞耻。第二，培养了我的英语思维。它让我觉得讲英语就像说中文一样的自然。我不会在讲英语的之前先想中文然后再翻译。我直接就可以讲英语。第三，它让我学会用已知的词描述未知的词。那时候没有电子词典也懒得翻大字典。学校里学到的单词就那么点。词汇量和现在普通大学生是没法比的。但是我们凭借着初生牛犊不怕虎的勇气和机智，描述了一切我们会讲到的东西。</p>
-<p>还有一个例子来自我一位外教，里安老师。（保护隐私就这样音译了，希望老师见谅。）里安说，在他学中文初期，很想提高自己的中文日常沟通能力，于是，就把自己日常生活中能够会用到的一切事物都转换成中文记忆。比如去买菜，那就记住了“西红柿，黄瓜，苹果……”。以至于有一次他回国，打死想不起一个蔬菜的英文，一个劲儿地和别人重复“西红柿西红柿”。：）</p>
-<p>关于这个我有个类似的经验，很长一段时间我想不起“thanksgiving day”的中文……</p>
-<p>也有很多人问我怎么练的口语，除了上述的方法，我最常用也是最有效的是在实践中学习。大学期间我参加过无数的志愿者活动，包括目前在做的工作，都是要和外国友人交流的。提高最快的一段时间就是我交了个外国闺蜜，木兰。有一次我去参加他们的一个斋戒月晚餐，听完十几个人从殖民到笑话到晚餐等各种话题的讨论后，我的听力和口语仿佛得到了质的飞跃。</p>
-<h2 id="总结">总结</h2>
-<h3 id="普适版">普适版</h3>
-<ol>
-<li>
-<p>要敢讲。不要怕犯错。</p>
-</li>
-<li>
-<p>把学英语融入到生活中，看美剧看电影，听歌看书都成。关键是保持学英语的乐趣。</p>
-</li>
-<li>
-<p>给你讲的每一句英语中加点感情。</p>
-</li>
-<li>
-<p>尝试着模仿你喜欢的台词。要慢，仔细感受每个音节的变化。</p>
-</li>
-<li>
-<p>遇到不会的单词换种方式描述。</p>
-</li>
-<li>
-<p>把日常生活中会用到的一切单词换成英语来记忆。</p>
-</li>
-</ol>
-<h3 id="速成版">速成版</h3>
-<ol>
-<li>找个外国友人聊。（谈恋爱的话要慎重啊。且不说文化差异，想像一下那个画面“你根本就不喜欢我，你跟我在一起就是为了学英语！”。本着不影响国际关系的原则，慎重。）</li>
-<li>去英语国家，融入当地生活个把个月。</li>
-<li>把每一句要说出口的话转换成英语。</li>
-</ol>
-<hr>
-]]></content:encoded>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
-      <description>建站时间轴 2023.04.26 使用 hexo + github pages 建立个人博客。 2023.06.25 更换为 hugo平台。 2023.07.05 GitHub部署成功，添加了RSS、评论功能。 TO DO 站点完善（考虑买个域名）
-添加阅读源界面/书签页面
-多多写博文 其实想了好几个主题只是都还没写</description>
-      <content:encoded><![CDATA[<h2 id="建站时间轴">建站时间轴</h2>
-<ul>
-<li>2023.04.26  使用 hexo + github pages 建立个人博客。</li>
-<li>2023.06.25  更换为 hugo平台。</li>
-<li>2023.07.05  GitHub部署成功，添加了RSS、评论功能。</li>
-</ul>
-<h2 id="to-do">TO DO</h2>
-<ul>
-<li>
-<p>站点完善（考虑买个域名）</p>
-</li>
-<li>
-<p>添加阅读源界面/书签页面</p>
-</li>
-<li>
-<p>多多写博文 <del>其实想了好几个主题只是都还没写</del></p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    
-    
-    
-  </channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>三三来迟</title>
+        <link>https://example.com/</link>
+        <description>Recent content on 三三来迟</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>hugo主题更换踩坑记录</title>
+        <link>https://example.com/2023/test/</link>
+        <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/2023/test/</guid>
+        <description>&lt;h2 id=&#34;写在前面&#34;&gt;写在前面&lt;/h2&gt;
+&lt;p&gt;如果你打算使用hugo搭建个人博客但还没安装hugo，在选择安装包时，请尽量下载包名带extended的版本，对主题适配度更高。&lt;/p&gt;
+&lt;h2 id=&#34;一番折腾&#34;&gt;一番折腾&lt;/h2&gt;
+&lt;p&gt;起因是想要把hugo博客主题由papermod换成stack。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下载stack主题的压缩包，此处直接指定好文件夹&lt;code&gt;git clone&lt;/code&gt;也可以，只是因为网络问题，我这样操作总是出错，我就干脆直接下载zip然后解压到themes文件夹下了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把之前主题的xml文件删掉，把stack主题里example site下的config.yaml复制到blog文件下，打开cmd窗口运行&lt;code&gt;hugo server&lt;/code&gt;命令，发现报错，无法加载网页。&lt;/p&gt;
+&lt;p&gt;（这里我一开始以为是之前的博客内容哪里和当前主题不兼容，于是我直接另开了一个文件夹重新&lt;code&gt;hugo new site&lt;/code&gt;，然后把stack主题里example site下的config.yaml文件和contents文件夹都复制到了new blog文件夹下，仍然行不通，后来我仔细阅读错误解读，在网上搜索终于发现了原因——我当初下载的hugo版本是无extended的，不支持scss、main.css的转换，需要更新版本或者重新下载。）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;error: failed to transform resource: TOCSS: failed to transform &amp;quot;scss/main.scss&amp;quot; **(**text/x-scss**)**: this feature is not available in your current Hugo version
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我问了chat-gpt关于hugo卸载的命令，然而ta向我提供的几个命令并不适合于windows系统，于是我打算先不管怎么卸载，先去把含extended的包下载下来再说，然后直接安装一下看看，结果发现点击exe没有反应，后来看了这篇文章：&lt;a class=&#34;link&#34; href=&#34;https://ripple-zjw.github.io/2019/%e6%90%ad%e5%bb%bahugo%e6%97%b6%e9%9c%80%e8%a6%81%e6%b3%a8%e6%84%8f%e7%9a%84%e5%9d%91/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;搭建Hugo时需要注意的坑&lt;/a&gt; 后，似乎明白了一点，于是我用listary软件搜索之前的hugo.exe放在哪个文件夹下，直接把那个文件替换成了我新下载的带extened版本，怀着忐忑的心情尝试运行——成功，可以查看新主题站点了！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;到此更换主题大功告成，之后可能就是装修主题啦。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hugo最新版本文件下载地址在这！&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;总结与反思&#34;&gt;总结与反思&lt;/h2&gt;
+&lt;p&gt;这次的折腾还得到了一个小知识就是：hugo主题虽然是基于go语言搭建的，但是不需要提前安装go语言哦。怎么发现的呢，这也经过了一番折腾，就不细说了，总之我一番操作失败后，打算重装go和hugo，但删除go之后运行hugo发现没什么影响，才知道了这个。&lt;/p&gt;
+&lt;p&gt;反思一下就是之前还是没有认真看readme文件之类的，多安装了go语言，没有选择带extended的hugo版本。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>我的浏览器插件们</title>
+        <link>https://example.com/2023/%E6%88%91%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E4%BB%AC/</link>
+        <pubDate>Mon, 17 Jul 2023 11:39:30 +0800</pubDate>
+        
+        <guid>https://example.com/2023/%E6%88%91%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E4%BB%AC/</guid>
+        <description>&lt;p&gt;最近接受象友的安利，换了一个新的浏览器Vivaldi，我不想登陆之前的账号同步（问就是倔强），事实上这个app是基于chrome框架开发的，可以直接登录Google账号同步，所以在使用过程中，我都是需要用到才开始安装，&lt;/p&gt;
+&lt;p&gt;首先不必多说的插件：adblock，拦截广告，浏览更安全。&lt;/p&gt;
+&lt;p&gt;其次是沉浸式翻译（immense translation）直接一键翻译网页，有多种翻译引擎可供选择，有的需要提前设置key，最喜欢中英文对照的功能，可以将中文放在英文后面显示，哪不会再看对照的中文，也方便提前了解整篇文章的内容，快速判断这篇内容是否有阅读的价值。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>我的APP列表</title>
+        <link>https://example.com/2023/%E6%88%91%E7%9A%84app%E5%88%97%E8%A1%A8/</link>
+        <pubDate>Sat, 15 Jul 2023 17:17:21 +0800</pubDate>
+        
+        <guid>https://example.com/2023/%E6%88%91%E7%9A%84app%E5%88%97%E8%A1%A8/</guid>
+        <description>&lt;p&gt;很早之前就想总结以下我的手机端app情况，因为我就像个仓鼠，喜欢发现与尝试各种不同的app。这事说了好长时间，今天终于&lt;code&gt;hugo new posts&lt;/code&gt;了。&lt;/p&gt;
+&lt;p&gt;想总结一下目前我手机的app，首先需要知道手机里都有哪些app，我尝试寻找一种方法可以导出我的App List，通过询问C酱（这是我在象上看一位友友对ChatGPT的称呼，觉得很可爱，所以剽窃了，捂脸~）她向我推荐了AppList应用，使用这个App可以导出plaintxt、markdown、HTML等格式，于是我获得了我的App List。&lt;/p&gt;
+&lt;p&gt;我的App如果算上系统预装有259个，不算的话是211个。（此处吐槽好臃肿的系统，而且没办法卸载，恨）。&lt;/p&gt;
+&lt;p&gt;写这篇文章一方面是希望断舍离一些使用频率很低的app，另一方面也向大家推荐一些我觉得好用的app&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;类别&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;具体项目&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;个数&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;浏览器&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;自带、Via、X浏览器&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;听&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;小宇宙 喜马拉雅 Pocket Casts Snipd 柠檬听书 鲨鱼听书 讯飞有声 MyRadio TTS Server&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title>Hugo &#43; Github Pages踩坑记录</title>
+        <link>https://example.com/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+        <pubDate>Wed, 05 Jul 2023 14:26:08 +0800</pubDate>
+        
+        <guid>https://example.com/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;p&gt;之前使用过 hexo + github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要参考了&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/posts/2021/f185ce41/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Alola World | 暨简明麻瓜快速念咒 Hugo 搭建笔记 | 小球飞鱼 (mantyke.icu)&lt;/a&gt; 这篇博文，博主写的详细易懂，我就不写具体流程了，直接点开链接看就好啦，但是可以补充一些作为参考。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;建立 github 仓库的时候建议勾选添加&lt;code&gt;readme.md&lt;/code&gt;文件，因为我不知道怎么&lt;code&gt;quick setup&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;部署到 github pages 之前，打开 git 执行前两行命令查看一下全局用户名和邮箱，我返回的是之前账号的信息，需要修改成新账号的用户名和邮箱，执行后两行即可。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 查看当前设置用户名、邮箱名
+git config --global user.name
+git config --global user.email
+# 设置新信息
+git config --global user.name “用户名”
+git config --global user.email “邮箱账号”
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;新版的 github 中默认的分支为&lt;code&gt;main&lt;/code&gt;，最后一步推送的时候使用&lt;code&gt;git push -u origin master&lt;/code&gt;即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt; git push&lt;/code&gt;时报错&lt;code&gt;[rejected] main -&amp;gt; main(fetchh first)&lt;/code&gt;，搜索多种解决方案无果，最后使用暴力命令&lt;code&gt;git push -f&lt;/code&gt; 解决。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>字体调整</title>
+        <link>https://example.com/2023/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</link>
+        <pubDate>Fri, 09 Jun 2023 11:45:28 +0000</pubDate>
+        
+        <guid>https://example.com/2023/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</guid>
+        <description>&lt;h2 id=&#34;问题描述&#34;&gt;问题描述&lt;/h2&gt;
+&lt;p&gt;使用Frame主题时，正文内容字体较大，如何调整字号&lt;/p&gt;
+&lt;h2 id=&#34;探索过程&#34;&gt;探索过程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;首先打开主题文件，判断字体文件应该在css或fonts文件夹下&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开fonts文件夹发现只有字体文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;推断应该在css文件夹，打开查看&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;发现有&lt;code&gt; font.styl&lt;/code&gt; 文件，查看有 &lt;code&gt;font-size $font-size-body&lt;/code&gt; 代码，推测应当修改body字体&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查看文件夹内其他文件找到 &lt;code&gt;variable.styl&lt;/code&gt; 中有font size设置，找到 &lt;code&gt;font-size-body&lt;/code&gt; 处修改，原始设定为16px，修改成14px符合要求&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>英语口语提升</title>
+        <link>https://example.com/2023/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</link>
+        <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
+        
+        <guid>https://example.com/2023/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</guid>
+        <description>&lt;h2 id=&#34;口语最基础内容&#34;&gt;口语最基础内容&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;26个英文字母&lt;/li&gt;
+&lt;li&gt;大概的音标发音&lt;/li&gt;
+&lt;li&gt;几种简单句的句型结构（陈述句，否定句，一般疑问句，特殊疑问句及其回答。）&lt;/li&gt;
+&lt;li&gt;句子的构成：主谓宾&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本文主要针对的是有一定英语基础，考试也马马虎虎，但是遇到外国友人就沉默的朋友们。&lt;/p&gt;
+&lt;p&gt;勇气，语言环境加练习是很重要的。&lt;/p&gt;
+&lt;h2 id=&#34;方法介绍&#34;&gt;方法介绍&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;讲。直接讲。想到什么就讲。哪怕是蹦单词也要讲。
+这一点就是勇气和自信。就像做错也比没做好。你讲错也比不敢讲要好。只有你尝试着开口讲了，你后续才有可能改正和进步。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;学英语是一件有趣的事情，不要让它变得枯燥了。把学习英语融入到生活中，融入到你的兴趣中。
+想必大家都有这种体会，想学好英语，天天捧着单词书背，但是没背两天就放弃了。过好久又拿出来背，但是没多久又放弃了。周而复始，永远只停留在abandon。因为背单词的过程很枯燥，所以很难坚持。对我这种唯兴趣论，没有监督，是真的很难坚持下来。不妨转变下思维。英语早就渗透在我们生活的方方面面了。电影，英美剧，小说，英文歌……比比皆是。挑一个你感兴趣的方向，每天做一点。比如我本人，从上大学以后，就只听英文歌，有两年时间每天什么都不做也会看几集美剧。我觉得这一点的作用就是保持你对英语的乐趣，以及把学英语这件事融入到你的日常生活里。相当于给自己创造了一种语言环境。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;说英语的时候，加点感情。
+栋栋说很多英语学习者的通病就是说英语永远在一个调上。毫无波澜。但是我们讲中文的时候，一定是有感情的。所以，他提出在你讲一句英文的时候，加点感情。一开始不适应的话，想想如果是中文，你会是什么样的语气，然后把这种语气加到英文里。我尝试以后的感受是立竿见影！我整个人都鲜活了起来哈哈哈哈。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;模仿。
+人都有好奇心嘛。我在第一次听到栋栋的口语的时候，心里就抑制不住对他的好奇。他到底悄咪咪的做了什么学了什么，口语能这么好呢！所以我就揣着好奇心厚着脸皮去问他了。他给我讲完上面三点以后，告诉了我真相。&lt;/p&gt;
+&lt;p&gt;他说可以找自己喜欢的电影看，尝试模仿电影中的台词。他强调在模仿的初期，一定要讲的很慢很慢很慢很慢，仔细地斟酌每个音节的转换，把每个音节都发标准。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;个人体会&#34;&gt;个人体会&lt;/h2&gt;
+&lt;p&gt;我真正开始学英语的时候是初一。因为英语老师很爱笑，每天的衣服都不一样，讲阅读理解的时候会给我们分享她生活中相关的故事，所以我和很多同学当时都巨喜欢英语。每天放学后，我和一个同学骑车回家，我们特别喜欢用英语对话，什么都聊。尽管我们的词汇量大概也就50-100的样子，我们还是能聊完从学校到家这小二十分钟。内容包括但不限于学校家庭周末。为什么词汇量这么少的情况下，我们却能聊这么多呢？我们那会儿为了能让对话持续下去，遇到不会讲的词就用会讲的词来描述它。如果有影像记录的话，现在看肯定是错误百出的，不管是语法还是单词。&lt;/p&gt;
+&lt;p&gt;但是这一段经历对我的英语口语帮助是巨大的。第一，它让我很敢讲英语。不会觉得讲英语羞耻。第二，培养了我的英语思维。它让我觉得讲英语就像说中文一样的自然。我不会在讲英语的之前先想中文然后再翻译。我直接就可以讲英语。第三，它让我学会用已知的词描述未知的词。那时候没有电子词典也懒得翻大字典。学校里学到的单词就那么点。词汇量和现在普通大学生是没法比的。但是我们凭借着初生牛犊不怕虎的勇气和机智，描述了一切我们会讲到的东西。&lt;/p&gt;
+&lt;p&gt;还有一个例子来自我一位外教，里安老师。（保护隐私就这样音译了，希望老师见谅。）里安说，在他学中文初期，很想提高自己的中文日常沟通能力，于是，就把自己日常生活中能够会用到的一切事物都转换成中文记忆。比如去买菜，那就记住了“西红柿，黄瓜，苹果……”。以至于有一次他回国，打死想不起一个蔬菜的英文，一个劲儿地和别人重复“西红柿西红柿”。：）&lt;/p&gt;
+&lt;p&gt;关于这个我有个类似的经验，很长一段时间我想不起“thanksgiving day”的中文……&lt;/p&gt;
+&lt;p&gt;也有很多人问我怎么练的口语，除了上述的方法，我最常用也是最有效的是在实践中学习。大学期间我参加过无数的志愿者活动，包括目前在做的工作，都是要和外国友人交流的。提高最快的一段时间就是我交了个外国闺蜜，木兰。有一次我去参加他们的一个斋戒月晚餐，听完十几个人从殖民到笑话到晚餐等各种话题的讨论后，我的听力和口语仿佛得到了质的飞跃。&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;h3 id=&#34;普适版&#34;&gt;普适版&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;要敢讲。不要怕犯错。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把学英语融入到生活中，看美剧看电影，听歌看书都成。关键是保持学英语的乐趣。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;给你讲的每一句英语中加点感情。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;尝试着模仿你喜欢的台词。要慢，仔细感受每个音节的变化。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;遇到不会的单词换种方式描述。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;把日常生活中会用到的一切单词换成英语来记忆。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;速成版&#34;&gt;速成版&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;找个外国友人聊。（谈恋爱的话要慎重啊。且不说文化差异，想像一下那个画面“你根本就不喜欢我，你跟我在一起就是为了学英语！”。本着不影响国际关系的原则，慎重。）&lt;/li&gt;
+&lt;li&gt;去英语国家，融入当地生活个把个月。&lt;/li&gt;
+&lt;li&gt;把每一句要说出口的话转换成英语。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+</description>
+        </item>
+        <item>
+        <title>Hugo | Hugo-stack-theme主题魔改版</title>
+        <link>https://example.com/2022/stack-theme-mod/</link>
+        <pubDate>Sun, 13 Feb 2022 03:02:52 +0800</pubDate>
+        
+        <guid>https://example.com/2022/stack-theme-mod/</guid>
+        <description>&lt;p&gt;Github仓库地址：&lt;a class=&#34;link&#34; href=&#34;https://github.com/Mantyke&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mantyke&lt;/a&gt;/&lt;a class=&#34;link&#34; href=&#34;https://github.com/Mantyke/Hugo-stack-theme-mod&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stack-theme-mod&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本主题由&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;CaiJimmy&lt;/a&gt;制作并&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;发布&lt;/a&gt;，这个仓库是由&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Mantyke&lt;/a&gt;修改的魔改版本&lt;/p&gt;
+&lt;p&gt;预览：&lt;a class=&#34;link&#34; href=&#34;https://stack-theme-mod.vercel.app/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Demo站&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;使用方式&#34;&gt;使用方式&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;从零建立博客&lt;/strong&gt;：Fork仓库到自己账号下，用Github 注册 Vercel，依次点击Overview → New Project → import刚刚Fork的仓库，设置&lt;code&gt;FRAMEWORK PRESET&lt;/code&gt;为Hugo → 点击&lt;code&gt;Environment Variables&lt;/code&gt;，设置&lt;code&gt;NAME&lt;/code&gt;为&lt;code&gt;HUGO_VERSION&lt;/code&gt;，&lt;code&gt;Value&lt;/code&gt;为&lt;code&gt;Hugo版本号（如0.89.0）&lt;/code&gt; → 点击Add → 点击Deploy，稍等十来秒即可部署完成。下载仓库到本地后使用Github Desktop更新文章。（注，本地预览需安装Hugo，具体请参照&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/2021/hugo-build-blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 一起动手搭建个人博客吧&lt;/a&gt;相关内容）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;旧博客更换主题&lt;/strong&gt;：不同主题方式不同，推荐只保留原博客的content文件夹，迁移到本仓库content文件夹后再按情况调整。&lt;/p&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;魔改内容&#34;&gt;魔改内容&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;调整文章页面为三栏显示（代码来自&lt;a class=&#34;link&#34; href=&#34;https://github.com/ShadowySpirits/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ShadowySpirits&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;文章按年份分类&lt;/li&gt;
+&lt;li&gt;增加文章字数统计与站点总字数、总篇数显示&lt;/li&gt;
+&lt;li&gt;修改全站字体为思源宋体&lt;/li&gt;
+&lt;li&gt;增加一个引用短代码（短代码来自&lt;a class=&#34;link&#34; href=&#34;https://guanqr.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;荷戟独彷徨&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;添加一个友情链接页面并设置为双栏（友情链接代码来自&lt;a class=&#34;link&#34; href=&#34;https://bore.vip/archives/3bf3725e/#%E6%B7%BB%E5%8A%A0%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bore&lt;/a&gt;，双栏代码来自&lt;a class=&#34;link&#34; href=&#34;https://tech.randomwaves.space/posts/21-12-08-make-hugo-stack-theme-links-display-in-two-columns/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;BB_Roin&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;一系列基于个人美观喜好的CSS修改&lt;/li&gt;
+&lt;li&gt;右侧栏增加Categories小部件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;部分使用说明&#34;&gt;部分使用说明&lt;/h2&gt;
+&lt;h3 id=&#34;引用样式短代码&#34;&gt;引用样式短代码&lt;/h3&gt;
+&lt;p&gt;（注：实际使用请补全花括号&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-fallback&#34;&gt;{&amp;lt; quote &amp;gt;}}}
+三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云气自山中来，如群马奔突而至车座左右，苏轼一时好奇心起，开笼收云归家，作《攓云篇》。
+{&amp;lt; /quote &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;
+
+&lt;blockquote class=&#34;quote&#34;&gt;
+        &lt;p&gt;三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云气自山中来，如群马奔突而至车座左右，苏轼一时好奇心起，开笼收云归家，作《攓云篇》。&lt;/p&gt;&lt;/blockquote&gt; 
+&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&#34;友情链接使用方式&#34;&gt;友情链接使用方式&lt;/h3&gt;
+&lt;p&gt;友链头像放在&lt;code&gt;/assets/link-img&lt;/code&gt;，友链数据放在&lt;code&gt;/data/links.json&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+    {
+        &amp;quot;title&amp;quot;: &amp;quot;小球飞鱼&amp;quot;,
+        &amp;quot;website&amp;quot;: &amp;quot;https://mantyke.icu/&amp;quot;,
+        &amp;quot;image&amp;quot;: &amp;quot;mantyke.png&amp;quot;,
+     &amp;quot;description&amp;quot;: &amp;quot;我们会一起遇见鲸鱼吗？&amp;quot;
+    },
+	{
+        &amp;quot;title&amp;quot;: &amp;quot;友情链接2&amp;quot;,
+        &amp;quot;website&amp;quot;: &amp;quot;&amp;quot;,
+        &amp;quot;image&amp;quot;: &amp;quot;&amp;quot;,
+     &amp;quot;description&amp;quot;: &amp;quot;&amp;quot;
+    }
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;修改页尾信息&#34;&gt;修改页尾信息&lt;/h3&gt;
+&lt;p&gt;站点名称及建站时间请修改以下代码&lt;/p&gt;
+&lt;p&gt;站点名称及链接：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#位置：layout/partials/footer/footer.html
+
+    &amp;lt;section class=&amp;quot;copyright&amp;quot;&amp;gt;
+        &amp;amp;copy; 
+        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format &amp;quot;2006&amp;quot;))) }}
+            {{ .Site.Params.footer.since }} - 
+        {{ end }}
+        {{ now.Format &amp;quot;2006&amp;quot; }} &amp;lt;a href=&amp;quot;https://stack-theme-mod.vercel.app/&amp;quot;&amp;gt;Example Site&amp;lt;/a&amp;gt;·&amp;lt;i class=&amp;quot;fas fa-bell&amp;quot;&amp;gt;&amp;lt;/i&amp;gt; &amp;lt;a id=&amp;quot;days&amp;quot;&amp;gt;0&amp;lt;/a&amp;gt;Days&amp;lt;br&amp;gt;
+      {{$var :=  $scratch.Get &amp;quot;total&amp;quot;}}{{$var = div $var 100.0}}{{$var = math.Ceil $var}}{{$var = div $var 10.0}}共书写了{{$var}}k字·共 {{ len (where .Site.RegularPages &amp;quot;Section&amp;quot; &amp;quot;post&amp;quot;) }}篇文章&amp;lt;/br&amp;gt;&amp;lt;span&amp;gt;&amp;lt;p&amp;gt;
+    &amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;#位置：layout/partials/footer/footer.html
+
+var s1 = &#39;2022-02-13&#39;;//设置为建站时间
+s1 = new Date(s1.replace(/-/g, &amp;quot;/&amp;quot;));
+s2 = new Date();
+var days = s2.getTime() - s1.getTime();
+var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+document.getElementById(&#39;days&#39;).innerHTML = number_of_days;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+&lt;h2 id=&#34;其他常见修改&#34;&gt;其他常见修改&lt;/h2&gt;
+&lt;h3 id=&#34;设置博客头像&#34;&gt;设置博客头像&lt;/h3&gt;
+&lt;p&gt;位置：&lt;code&gt;/assets/img&lt;/code&gt;，请将头像命名为&lt;code&gt;avatar.png&lt;/code&gt;，替换原头像文件&lt;/p&gt;
+&lt;h3 id=&#34;删除博客头像&#34;&gt;删除博客头像&lt;/h3&gt;
+&lt;p&gt;位置：&lt;code&gt;/layouts/partials/sidebar/left.html&lt;/code&gt;，注释或删去以下部分：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        {{ with .Site.Params.sidebar.avatar }}
+            {{ if (default true .enabled) }}
+            &amp;lt;figure class=&amp;quot;site-avatar&amp;quot;&amp;gt;
+                &amp;lt;a href=&amp;quot;{{ .Site.BaseURL | relLangURL }}&amp;quot;&amp;gt;
+                {{ if not .local }}
+                    &amp;lt;img src=&amp;quot;{{ .src }}&amp;quot; width=&amp;quot;300&amp;quot; height=&amp;quot;300&amp;quot; class=&amp;quot;site-logo&amp;quot; loading=&amp;quot;lazy&amp;quot; alt=&amp;quot;Avatar&amp;quot;&amp;gt;
+                {{ else }}
+                    {{ $avatar := resources.Get (.src) }}
+                    
+                    {{ if $avatar }}
+                        {{ $avatarResized := $avatar.Resize &amp;quot;300x&amp;quot; }}
+                        &amp;lt;img src=&amp;quot;{{ $avatarResized.RelPermalink }}&amp;quot; width=&amp;quot;{{ $avatarResized.Width }}&amp;quot;
+                            height=&amp;quot;{{ $avatarResized.Height }}&amp;quot; class=&amp;quot;site-logo&amp;quot; loading=&amp;quot;lazy&amp;quot; alt=&amp;quot;Avatar&amp;quot;&amp;gt;
+                    {{ else }}
+                        {{ errorf &amp;quot;Failed loading avatar from %q&amp;quot; . }}
+                    {{ end }}
+                {{ end }}
+                &amp;lt;/a&amp;gt;
+                {{ with $.Site.Params.sidebar.emoji }}
+                    &amp;lt;span class=&amp;quot;emoji&amp;quot;&amp;gt;{{ . }}&amp;lt;/span&amp;gt;
+                {{ end }}
+            &amp;lt;/figure&amp;gt;
+            {{ end }}
+        {{ end }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;修改博客背景颜色&#34;&gt;修改博客背景颜色&lt;/h3&gt;
+&lt;p&gt;位置：&lt;code&gt;assets\scss\variables.scss&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;--body-background: #f6f6f6;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;指定首页分类标签颜色&#34;&gt;指定首页分类标签颜色&lt;/h3&gt;
+&lt;p&gt;位置：&lt;code&gt;content\categories&lt;/code&gt;，创建分类同名文件夹后，在文件夹内创建&lt;code&gt;_index.md&lt;/code&gt;文件，写入frontmatter&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;title: &amp;quot;做猫贵在折腾&amp;quot; //分类名称
+description: &amp;quot;简介 Blablabla&amp;quot; //不需要可以删了
+image: &amp;quot;ffxiv_20210830_230509_817.png&amp;quot; //分类题图，不需要也可以删了
+style:
+    background: &amp;quot;#80aba9&amp;quot; //分类标签底色
+    color: &amp;quot;#fff&amp;quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;配置各类图标&#34;&gt;配置各类图标&lt;/h3&gt;
+&lt;p&gt;图标放在：&lt;code&gt;/assets/icons&lt;/code&gt;，svg格式，配置方式参考&lt;a class=&#34;link&#34; href=&#34;https://docs.stack.jimmycai.com/zh/configuration/custom-menu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;文档&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h3 id=&#34;其他参考&#34;&gt;其他参考&lt;/h3&gt;
+&lt;p&gt;其他我站修改及Hugo博客搭建教程可参见以下文章，作者代码水平为0，写作时间跨度较大，参考时务必注意：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/2021/hugo-build-blog/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 一起动手搭建个人博客吧&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/2021/f9f0ec87/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 看中 Stack 主题的归档功能，搬家并做修改&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/2021/a08f1963/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 另一篇 Stack 主题装修记录&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/2021/comment/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 为 Blog 增加评论区&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/2021/47a5331b/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 以正确姿势自动添加文章最后更新时间&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/2021/cf2cf0fb/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 在文章中插入轮播图片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/2022/stack-theme-furnish03/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo | 第三篇 Stack 主题装修记录，堂堂再临！&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;如果您喜欢或使用这个魔改版主题成功搭建了自己的个人博客，欢迎到我的&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/2022/stack-theme-mod/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;个人博客&lt;/a&gt;中留言告诉我，我会很开心的！&lt;/p&gt;
+&lt;br&gt;
+</description>
+        </item>
+        <item>
+        <title>Chinese Test</title>
+        <link>https://example.com/2020/test-chinese/</link>
+        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/2020/test-chinese/</guid>
+        <description>&lt;img src="https://example.com/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;短代码测试&#34;&gt;短代码测试&lt;/h2&gt;
+
+
+&lt;blockquote class=&#34;quote&#34;&gt;
+        &lt;p&gt;三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云气自山中来，如群马奔突而至车座左右，苏轼一时好奇心起，开笼收云归家，作《攓云篇》。&lt;/p&gt;&lt;/blockquote&gt; 
+&lt;h2 id=&#34;正文测试&#34;&gt;正文测试&lt;/h2&gt;
+&lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
+&lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
+&lt;h2 id=&#34;引用&#34;&gt;引用&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;思念是最暖的忧伤像一双翅膀&lt;br&gt;
+让我停不了飞不远在过往游荡&lt;br&gt;
+不告而别的你 就算为了我着想&lt;br&gt;
+这么沉痛的呵护 我怎么能翱翔&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;图片&#34;&gt;图片&lt;/h2&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 66; 
+			flex-basis: 160px&#34;
+	&gt;
+	&lt;a href=&#34;https://example.com/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;
+		&lt;img src=&#34;https://example.com/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+			width=&#34;667&#34;
+			height=&#34;1000&#34;
+			srcset=&#34;https://example.com/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://example.com/2020/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Photo by Florian Klauer on Unsplash&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Photo by Florian Klauer on Unsplash&lt;/figcaption&gt;
+	
+&lt;/figure&gt;  &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 149; 
+			flex-basis: 359px&#34;
+	&gt;
+	&lt;a href=&#34;https://example.com/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34; data-size=&#34;1000x667&#34;&gt;
+		&lt;img src=&#34;https://example.com/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
+			width=&#34;1000&#34;
+			height=&#34;667&#34;
+			srcset=&#34;https://example.com/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://example.com/2020/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Photo by Luca Bravo on Unsplash&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Photo by Luca Bravo on Unsplash&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://example.com/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34; data-size=&#34;1000x750&#34;&gt;
+		&lt;img src=&#34;https://example.com/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
+			width=&#34;1000&#34;
+			height=&#34;750&#34;
+			srcset=&#34;https://example.com/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_480x0_resize_q75_box.jpg 480w, https://example.com/2020/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1024x0_resize_q75_box.jpg 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Photo by Helena Hertz on Unsplash&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Photo by Helena Hertz on Unsplash&lt;/figcaption&gt;
+	
+&lt;/figure&gt;  &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 66; 
+			flex-basis: 160px&#34;
+	&gt;
+	&lt;a href=&#34;https://example.com/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;
+		&lt;img src=&#34;https://example.com/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
+			width=&#34;667&#34;
+			height=&#34;1000&#34;
+			srcset=&#34;https://example.com/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://example.com/2020/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Photo by Hudai Gayiran on Unsplash&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;![Photo by Florian Klauer on Unsplash](florian-klauer-nptLmg6jqDo-unsplash.jpg)  ![Photo by Luca Bravo on Unsplash](luca-bravo-alS7ewQ41M8-unsplash.jpg) 
+
+![Photo by Helena Hertz on Unsplash](helena-hertz-wWZzXlDpMog-unsplash.jpg)  ![Photo by Hudai Gayiran on Unsplash](hudai-gayiran-3Od_VKcDEAA-unsplash.jpg)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;相册语法来自 &lt;a class=&#34;link&#34; href=&#34;https://typlog.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Typlog&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

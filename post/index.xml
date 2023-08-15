@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 三三来迟</title>
+    <link>https://example.com/post/</link>
+    <description>Recent content in Posts on 三三来迟</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo主题更换踩坑记录</title>
+      <link>https://example.com/2023/test/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2023/test/</guid>
+      <description>写在前面 如果你打算使用hugo搭建个人博客但还没安装hugo，在选择安装包时，请尽量下载包名带extended的版本，对主题适配度更高。 一番</description>
+    </item>
+    
+    <item>
+      <title>我的浏览器插件们</title>
+      <link>https://example.com/2023/%E6%88%91%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E4%BB%AC/</link>
+      <pubDate>Mon, 17 Jul 2023 11:39:30 +0800</pubDate>
+      
+      <guid>https://example.com/2023/%E6%88%91%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E4%BB%AC/</guid>
+      <description>最近接受象友的安利，换了一个新的浏览器Vivaldi，我不想登陆之前的账号同步（问就是倔强），事实上这个app是基于chrome框架开发的，</description>
+    </item>
+    
+    <item>
+      <title>我的APP列表</title>
+      <link>https://example.com/2023/%E6%88%91%E7%9A%84app%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Sat, 15 Jul 2023 17:17:21 +0800</pubDate>
+      
+      <guid>https://example.com/2023/%E6%88%91%E7%9A%84app%E5%88%97%E8%A1%A8/</guid>
+      <description>很早之前就想总结以下我的手机端app情况，因为我就像个仓鼠，喜欢发现与尝试各种不同的app。这事说了好长时间，今天终于hugo new posts了</description>
+    </item>
+    
+    <item>
+      <title>Hugo &#43; Github Pages踩坑记录</title>
+      <link>https://example.com/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</link>
+      <pubDate>Wed, 05 Jul 2023 14:26:08 +0800</pubDate>
+      
+      <guid>https://example.com/2023/hugo--github-pages%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/</guid>
+      <description>之前使用过 hexo + github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要</description>
+    </item>
+    
+    <item>
+      <title>字体调整</title>
+      <link>https://example.com/2023/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</link>
+      <pubDate>Fri, 09 Jun 2023 11:45:28 +0000</pubDate>
+      
+      <guid>https://example.com/2023/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</guid>
+      <description>问题描述 使用Frame主题时，正文内容字体较大，如何调整字号 探索过程 首先打开主题文件，判断字体文件应该在css或fonts文件夹下 打开fon</description>
+    </item>
+    
+    <item>
+      <title>英语口语提升</title>
+      <link>https://example.com/2023/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</link>
+      <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
+      
+      <guid>https://example.com/2023/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD%E6%8F%90%E5%8D%87/</guid>
+      <description>口语最基础内容 26个英文字母 大概的音标发音 几种简单句的句型结构（陈述句，否定句，一般疑问句，特殊疑问句及其回答。） 句子的构成：主谓宾 本文主要</description>
+    </item>
+    
+    <item>
+      <title>Hugo | Hugo-stack-theme主题魔改版</title>
+      <link>https://example.com/2022/stack-theme-mod/</link>
+      <pubDate>Sun, 13 Feb 2022 03:02:52 +0800</pubDate>
+      
+      <guid>https://example.com/2022/stack-theme-mod/</guid>
+      <description>Github仓库地址：Mantyke/stack-theme-mod 本主题由CaiJimmy制作并发布，这个仓库是由Mantyke修改的魔改</description>
+    </item>
+    
+    <item>
+      <title>Chinese Test</title>
+      <link>https://example.com/2020/test-chinese/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2020/test-chinese/</guid>
+      <description>短代码测试 三月，因久旱不雨，苏轼赴郿，祈雨于太白山之上清宫。数日后，虽有微雨，父老以为不足，于是，再陪宋太守亲往祭祷，回程路上，便见道中有云</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,25 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Moli&#39;s Blog</title>
-    <link>/categories/</link>
-    <description>Recent content in Categories on Moli&#39;s Blog</description>
-    <image>
-      <title>Moli&#39;s Blog</title>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <title>Categories on 三三来迟</title>
+    <link>https://example.com/categories/</link>
+    <description>Recent content in Categories on 三三来迟</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 May 2023 15:41:22 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客装修</title>
+      <link>https://example.com/categories/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>笔记</title>
-      <link>/categories/%E7%AC%94%E8%AE%B0/</link>
+      <link>https://example.com/categories/%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
       
-      <guid>/categories/%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://example.com/categories/%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>甘普基本变形定律</title>
+      <link>https://example.com/categories/%E7%94%98%E6%99%AE%E5%9F%BA%E6%9C%AC%E5%8F%98%E5%BD%A2%E5%AE%9A%E5%BE%8B/</link>
+      <pubDate>Sun, 13 Feb 2022 03:02:52 +0800</pubDate>
+      
+      <guid>https://example.com/categories/%E7%94%98%E6%99%AE%E5%9F%BA%E6%9C%AC%E5%8F%98%E5%BD%A2%E5%AE%9A%E5%BE%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://example.com/categories/test/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试</title>
+      <link>https://example.com/categories/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/categories/%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
     </item>
     
   </channel>

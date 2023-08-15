@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Moli&#39;s Blog</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on Moli&#39;s Blog</description>
-    <image>
-      <title>Moli&#39;s Blog</title>
-      <url>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
+    <title>Tags on 三三来迟</title>
+    <link>https://example.com/tags/</link>
+    <description>Recent content in Tags on 三三来迟</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Wed, 05 Jul 2023 14:26:08 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Wed, 05 Jul 2023 14:26:08 +0800</pubDate>
+      <link>https://example.com/tags/hugo/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hugo/</guid>
+      <guid>https://example.com/tags/hugo/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>stack</title>
+      <link>https://example.com/tags/stack/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/tags/stack/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>博客美化</title>
-      <link>/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</link>
+      <link>https://example.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</link>
       <pubDate>Fri, 09 Jun 2023 11:45:28 +0000</pubDate>
       
-      <guid>/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</guid>
+      <guid>https://example.com/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>摘录</title>
-      <link>/tags/%E6%91%98%E5%BD%95/</link>
-      <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
-      
-      <guid>/tags/%E6%91%98%E5%BD%95/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
     <item>
       <title>英语口语</title>
-      <link>/tags/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/</link>
+      <link>https://example.com/tags/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/</link>
       <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
       
-      <guid>/tags/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/</guid>
+      <guid>https://example.com/tags/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/</guid>
       <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>摘录</title>
+      <link>https://example.com/tags/%E6%91%98%E5%BD%95/</link>
+      <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
+      
+      <guid>https://example.com/tags/%E6%91%98%E5%BD%95/</guid>
+      <description></description>
     </item>
     
   </channel>

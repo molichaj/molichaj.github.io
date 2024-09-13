@@ -20,7 +20,7 @@ enableImageWebp = true
 fingerprintAlgorithm = "sha256"
 
 [header]
-  layout = "basic" # valid options: basic, hamburger, hybrid, custom
+  layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
   # logo = "img/logo.jpg"
   # logoDark = "img/dark-logo.jpg"
   showTitle = true
@@ -42,8 +42,8 @@ fingerprintAlgorithm = "sha256"
   showAuthor = true
   showBreadcrumbs = false
   showDraftLabel = true
-  showEdit = false
-  # editURL = "https://github.com/username/repo/"
+  showEdit = true
+  editURL = "https://github.com/molichaj/molichaj.github.io/tree/master/content"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
@@ -51,7 +51,7 @@ fingerprintAlgorithm = "sha256"
   showReadingTime = false
   showTableOfContents = true
   showTaxonomies = false
-  showWordCount = true
+  showWordCount = false
   showComments = false
   # sharingLinks = ["facebook", "x-twitter", "mastodon", "pinterest", "reddit", "linkedin", "email", "threads", "telegram", "line", "weibo"]
 

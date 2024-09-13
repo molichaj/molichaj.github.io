@@ -14,7 +14,7 @@ copyright = "&copy; 2024 Congo contributors"
 
 [params.author]
   name = "茉莉茶酒"
-  image = "author.jpg"
+  image = "img/author.jpg"
   headline = "当这一切都结束，请不要失落"
   bio = "当这一切都结束，请不要失落"
   #links = [

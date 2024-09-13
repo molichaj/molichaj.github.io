@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docs on Molichaj</title>
+    <link>https://molichaj.github.io/tags/docs/</link>
+    <description>Recent content in docs on Molichaj</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2024 Congo contributors</copyright>
+    <lastBuildDate>Wed, 05 Jul 2023 14:26:08 +0800</lastBuildDate><atom:link href="https://molichaj.github.io/tags/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo &#43; Github Pages踩坑记录</title>
+      <link>https://molichaj.github.io/docs/start/getting-started/</link>
+      <pubDate>Wed, 05 Jul 2023 14:26:08 +0800</pubDate>
+      
+      <guid>https://molichaj.github.io/docs/start/getting-started/</guid>
+      <description>之前使用过 hexo + github pages 建站，不希望中间冲突，所以之间建立了新账号，但之前配置过 git 账号和 SSH 之类的，配置 hugo 的时候需要改成新的，是一件麻烦的事情。主要参考了Alola World | 暨简明麻瓜快速念咒 Hugo 搭建笔记 | 小球飞鱼 (mantyke.</description>
+    </item>
+    
+  </channel>
+</rss>

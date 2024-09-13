@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Molichaj</title>
+    <link>https://molichaj.github.io/categories/</link>
+    <description>Recent content in Categories on Molichaj</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2024 Congo contributors</copyright>
+    <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://molichaj.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客装修</title>
+      <link>https://molichaj.github.io/categories/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://molichaj.github.io/categories/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>笔记</title>
+      <link>https://molichaj.github.io/categories/%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
+      
+      <guid>https://molichaj.github.io/categories/%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

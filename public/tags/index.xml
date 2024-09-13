@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Molichaj</title>
+    <link>https://molichaj.github.io/tags/</link>
+    <description>Recent content in Tags on Molichaj</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2024 Congo contributors</copyright>
+    <lastBuildDate>Tue, 15 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://molichaj.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo</title>
+      <link>https://molichaj.github.io/tags/hugo/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://molichaj.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stack</title>
+      <link>https://molichaj.github.io/tags/stack/</link>
+      <pubDate>Tue, 15 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://molichaj.github.io/tags/stack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docs</title>
+      <link>https://molichaj.github.io/tags/docs/</link>
+      <pubDate>Wed, 05 Jul 2023 14:26:08 +0800</pubDate>
+      
+      <guid>https://molichaj.github.io/tags/docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>博客美化</title>
+      <link>https://molichaj.github.io/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</link>
+      <pubDate>Fri, 09 Jun 2023 11:45:28 +0000</pubDate>
+      
+      <guid>https://molichaj.github.io/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>英语口语</title>
+      <link>https://molichaj.github.io/tags/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/</link>
+      <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
+      
+      <guid>https://molichaj.github.io/tags/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>摘录</title>
+      <link>https://molichaj.github.io/tags/%E6%91%98%E5%BD%95/</link>
+      <pubDate>Thu, 04 May 2023 15:41:22 +0000</pubDate>
+      
+      <guid>https://molichaj.github.io/tags/%E6%91%98%E5%BD%95/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

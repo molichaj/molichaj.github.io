@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客美化 on Molichaj</title>
+    <link>https://molichaj.github.io/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/</link>
+    <description>Recent content in 博客美化 on Molichaj</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2024 Congo contributors</copyright>
+    <lastBuildDate>Fri, 09 Jun 2023 11:45:28 +0000</lastBuildDate><atom:link href="https://molichaj.github.io/tags/%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>字体调整</title>
+      <link>https://molichaj.github.io/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</link>
+      <pubDate>Fri, 09 Jun 2023 11:45:28 +0000</pubDate>
+      
+      <guid>https://molichaj.github.io/posts/%E5%AD%97%E4%BD%93%E8%B0%83%E6%95%B4/</guid>
+      <description>问题描述 #使用Frame主题时，正文内容字体较大，如何调整字号</description>
+    </item>
+    
+  </channel>
+</rss>
